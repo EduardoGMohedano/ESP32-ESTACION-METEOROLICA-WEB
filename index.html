@@ -1,10 +1,25 @@
 <!DOCTYPE html>
 <html>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
-<head>Pagina principal ESP32</head>
+<head>
+    <meta charset="UTF-8">
+    <title> Pagina principal ESP32</title> 
+    <link rel="stylesheet" href="styles.css">
+</head>
 
 <body>
-    <div><canvas id="myChart" style="width:100%;max-width:700px"></canvas></div>
+    <div class="container">
+        <nav class="side-menu">
+            <ul>
+                <li><button onclick="loadGraph('Temperatura')"> Temperatura </button></li>
+                <li><button onclick="loadGraph('Humedad')"> Humedad </button></li>
+                <li><button onclick="loadGraph('Presion atmosferica')"> Presion atmosferica </button></li>
+            </ul>
+        </nav>
+        <main>
+            <canvas id="myChart"></canvas>
+        </main>
+    </div>
     <script src="myScript.js"></script> 
 </body>
 
