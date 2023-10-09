@@ -1,0 +1,6 @@
+ESTACION METEOROLOGICA
+
+Este proyecto contiene 3 graficas que nos daran informacion sobre la temperatura, humedad y presion atmosferica.
+
+Tenemos 3 paginas las cuales nos van a mostrar informacion en tiempo real sobre
+cada una de las variables meteorologicas, estos datos son adquiridos por una tarjeta de desarollo esp32.
