@@ -8,18 +8,17 @@
 </head>
 
 <body>
-    <div class="container">
-        <nav class="side-menu">
-            <ul>
-                <li><button onclick="loadGraph('Temperatura')"> Temperatura </button></li>
-                <li><button onclick="loadGraph('Humedad')"> Humedad </button></li>
-                <li><button onclick="loadGraph('Presion atmosferica')"> Presion atmosferica </button></li>
-            </ul>
-        </nav>
-        <main>
-            <canvas id="myChart"></canvas>
-        </main>
+    <div class="sidebar">
+        <a class="active" href="#home">Inicio</a>
+            <a href="#" id="Temperatura">Temperatura</a>
+            <a href="#" id="Humedad">Humedad</a>
+            <a href="#" id="Presion">Presion atmosferica</a>
     </div>
+
+    <div class="content">
+        <canvas id="myChart"></canvas>
+    </div>
+    
     <script src="myScript.js"></script> 
 </body>
 

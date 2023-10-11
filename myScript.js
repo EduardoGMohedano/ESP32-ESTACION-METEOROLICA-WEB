@@ -1,5 +1,5 @@
 const numberPoints = 10;
-const updateTime = 1000;
+const updateTime = 1500;
 let TmpChart;
 
 function loadGraph(datatype){
@@ -81,3 +81,16 @@ function loadGraph(datatype){
     setInterval(updateChart, updateTime);
       
 }
+
+// Event listeners para cada opcion grafica
+document.getElementById('Temperatura').addEventListener('click', () => {
+    loadGraph('Temperatura');
+});
+
+document.getElementById('Humedad').addEventListener('click', () => {
+    loadGraph('Humedad');
+});
+
+document.getElementById('Presion').addEventListener('click', () => {
+    loadGraph('Presion atmosferica');
+});
